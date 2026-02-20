@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask image reveal effect</title>
+    <link rel="stylesheet" href="style.css">
+    <img
+  id="green"
+  src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+  alt="Pride flag" />
+<img
+  id="stroke"
+  src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+  alt="Pride flag" />
+<img
+  id="both"
+  src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+  alt="Pride flag" />
+<img
+  id="alphaMode"
+  src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+  alt="Pride flag" />
+
+<svg height="0" width="0">
+  <mask id="greenMask">
+    <path
+      d="M20,70 A40,40,0,0,1,100,70 A40,40,0,0,1,180,70 Q180,130,100,190 Q20,130,20,70 Z"
+      fill="green" />
+  </mask>
+  <mask id="strokeMask">
+    <path
+      d="M20,70 A40,40,0,0,1,100,70 A40,40,0,0,1,180,70 Q180,130,100,190 Q20,130,20,70 Z"
+      fill="none"
+      stroke="white"
+      stroke-width="20" />
+  </mask>
+  <mask id="bothMask">
+    <path
+      d="M20,70 A40,40,0,0,1,100,70 A40,40,0,0,1,180,70 Q180,130,100,190 Q20,130,20,70 Z"
+      fill="green"
+      stroke="white"
+      stroke-width="20" />
+  </mask>
+  <mask id="black">
+    <path
+      d="M20,70 A40,40,0,0,1,100,70 A40,40,0,0,1,180,70 Q180,130,100,190 Q20,130,20,70 Z"
+      fill="black" />
+  </mask>
+</svg>
+  
+</head>
+<body>
+    
+</body>
+</html>

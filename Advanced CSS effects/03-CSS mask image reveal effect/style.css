@@ -1,0 +1,17 @@
+#green {
+  mask-image: url("#greenMask");
+}
+#stroke {
+  mask-image: url("#strokeMask");
+}
+#both {
+  mask-image: url("#bothMask");
+}
+
+#alphaMode {
+    mask-image: url("#bothalphaModeMask");
+}
+
+body:has(:checked) img {
+  mask-mode: alpha;
+}
